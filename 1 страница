@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title> Шар предсказаний </title>
+</head>
+<body>
+    <h1> Шар предсказаний </h1>
+    
+    <div class="text"> 
+        <p>Принцип работы шара очень прост. Человеку достаточно сформулировать свой вопрос в голове, написать его и затем встряхнуть шар (нажать на кнопку).</p> 
+    </div>
+
+    <div class="input"> 
+        <p>Введите вопрос</p>
+    </div>
+
+    <img scr="https://drive.google.com/uc?export=view&id=1hXUBlH91NMyjB_U4HNkBTJu7kIwwGZ_A/view?usp=drive_link"/>
+    
+    <div class="button"> 
+        <p> Ответ на вопрос </p>
+    </div>
+    
+    <div class="basement">
+        <p> отзывы</p> 
+    </div>
+</body>
+
+
+</html>
