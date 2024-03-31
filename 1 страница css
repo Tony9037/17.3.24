@@ -6,7 +6,7 @@ body{
     text-align: center;
     font-size: 25px;
     font-family: Arial;
-    width: 1200px;
+    width: 1400px;
     display: flex;
     justify-content: flex-end;
 }
@@ -17,14 +17,19 @@ body{
     align: center;
     display: flex;
     justify-content: center;
+    font-weight: bolder;
 }
 
 .button{
     width:100px;
+    
 }
 
 .basement{
     background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end
 }
 
 .next{
