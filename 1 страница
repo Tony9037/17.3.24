@@ -2,6 +2,7 @@
 <head>
     <title> Шар предсказаний </title>
     <link rel="stylesheet" href="page1.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
     <h1> Шар предсказаний </h1>
@@ -14,8 +15,10 @@
         <p>Введите вопрос</p>
     </div>
 
-    <img scr="https://drive.google.com/uc?export=view&id=1hXUBlH91NMyjB_U4HNkBTJu7kIwwGZ_A/view?usp=drive_link"/>
-    
+    <div class="img">
+    <img src="шарик.png" width='400px'/>
+    </div>
+
     <div class="button"> 
         <p> Ответ на вопрос </p>
     </div>
