@@ -1,6 +1,7 @@
 <html>
 <head>
     <title> Шар предсказаний </title>
+    <link rel="stylesheet" href="page1.css">
 </head>
 <body>
     <h1> Шар предсказаний </h1>
@@ -20,7 +21,12 @@
     </div>
     
     <div class="basement">
-        <p> отзывы</p> 
+        <table class="table"> 
+            <tr> <th> Отзывы </th> </tr>
+            <tr> <th> Theballofpredictions@gmail.com </th> </tr>
+            <tr> <th> +7(645)674-32-75 </th> </tr>
+        </table> 
+        <p class="next"> Следующая страница </p>
     </div>
 </body>
 
