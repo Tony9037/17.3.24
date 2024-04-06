@@ -3,6 +3,7 @@
     <title> Шар предсказаний </title>
     <link rel="stylesheet" href="page1.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="page1.js" defer></script>
 </head>
 <body>
     <h1> Шар предсказаний </h1>
@@ -12,7 +13,9 @@
     </div>
 
     <div class="input"> 
-        <p>Введите вопрос</p>
+        <p>
+            Введите вопрос <input type="text" id="imp1">
+        </p>
     </div>
 
     <div class="img">
@@ -20,7 +23,7 @@
     </div>
 
     <div class="button"> 
-        <p> Ответ на вопрос </p>
+        <button onclick="pow2()"> Узнай ответ </button>
     </div>
     
     <div class="basement">
