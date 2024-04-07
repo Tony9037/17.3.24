@@ -1,4 +1,18 @@
-function pow2(){
+var el = document.getElementById('img');
+document.getElementsByClassName('button')[0].addEventListener('click',
+    function() {
+        el.classList.toggle('active');
+    })
+
+
+
+
+function answer(){
+    //document.getElementById('inp1').value
+    alert();
+}
+
+function next(){
     //document.getElementById('inp1').value
     alert();
 }
