@@ -1,6 +1,7 @@
 <html>
 <head>
     <title> Шар предсказаний </title>
+    <meta charset='UTF-8'>
     <link rel="stylesheet" href="page1.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="page1.js" defer></script>
@@ -18,12 +19,14 @@
         </p>
     </div>
 
-    <div class="img">
-    <img src="шарик.png" width='400px'/>
-    </div>
+    <div class="container">
+        <div class="img" id="img">
+            <img src="шарик.png" width='400px'/>
+        </div>
 
-    <div class="button"> 
-        <button onclick="pow2()"> Узнай ответ </button>
+        <div class="button"> 
+            <button onclick="answer()"> Узнай ответ </button>
+        </div>
     </div>
     
     <div class="basement">
@@ -32,7 +35,7 @@
             <tr> <th> Theballofpredictions@gmail.com </th> </tr>
             <tr> <th> +7(645)674-32-75 </th> </tr>
         </table> 
-        <p class="next"> Следующая страница </p>
+        <button onclick="next()" class="next"> Следующая страница </button>
     </div>
 </body>
 
