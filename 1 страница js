@@ -8,12 +8,14 @@ document.getElementsByClassName('button')[0].addEventListener('click',
 anime({
     targets: '.shape',
     keyframes: [
-        {borderRadius: 0},
-        {borderRadius: '50% 50%'},
-        {borderRadius: '50% 20%'},
-        {borderRadius: '20% 20%'},
-        {borderRadius: '50% 50%'},
-        {borderRadius: '0% 0%'}
+        {translateX: '0px'},
+        {translateX: '-20px'},
+        {translateX: '0px'},
+        {translateX: '20px'},
+        {translateX: '0px'},
+        {translateX: '-20px'},
+        {translateX: '0px'},
+        {translateX: '20px'},
     ],
     duration: 2000,
     easing: 'linear'
