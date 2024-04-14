@@ -1,5 +1,26 @@
+let button_field = document.querySelector('.answer')
+
+function randint(min, max) {
+    return Math.round(Math.random() * (max - min) + min)
+}
+let signs = ['да', 'нет', 'возможно', 'маловероятно', 'духи так не считают', 'духи согласны с этим']
+function getRandomSign(){
+    return signs[randint(0,5)]
+}
+class Answer{
+    constructor(){
+        let sign = getRandomSign()
+        this.button = `${sign}`
+        if (sign == 'да') {this.correct = да}
+        else if (sign == 'нет') {this.correct = нет}
+        else if (sign == 'возможно') {this.correct = возможно}
+        else if (sign == 'маловероятно') {this.correct = маловероятно}
+        else if (sign == 'духи так не считают') {this.correct = духи так не считают}
+        else if (sign == 'духи соглсасны с этим') {this.correct = духи согласны с этим}
+    }}
+
 var el = document.getElementById('img');
-document.getElementsByClassName('button')[0].addEventListener('click',
+document.getElementsByClassName('answer')[0].addEventListener('click',
     function() {
         el.classList.toggle('active');
     })
@@ -26,7 +47,3 @@ function answer(){
     alert();
 }
 
-function next(){
-    //document.getElementById('inp1').value
-    alert();
-}
