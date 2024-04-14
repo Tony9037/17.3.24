@@ -23,6 +23,7 @@
     <div class="container">
         <div class="img" id="img">
             <img src="шарик.png" width='400px'/>
+            <div class="zero"><p></p></div>
         </div>
 
         <div class="button"> 
