@@ -15,7 +15,8 @@ function answer1(){
     else if (a == 3) {b = 'маловероятно'}
     else if (a == 4) {b = 'духи так не считают'}
     else if (a == 5) {b = 'духи согласны с этим'}
-    alert(b)
+    let zero = document.querySelector('.zero')
+    zero.innerHTML = `${b}`
 }
 
 function answer(){
