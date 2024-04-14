@@ -1,33 +1,26 @@
-let button_field = document.querySelector('.answer')
-
 function randint(min, max) {
     return Math.round(Math.random() * (max - min) + min)
 }
-let signs = ['да', 'нет', 'возможно', 'маловероятно', 'духи так не считают', 'духи согласны с этим']
+
 function getRandomSign(){
-    return signs[randint(0,5)]
+    let a = randint(0,5)
+    return a
 }
-class Answer{
-    constructor(){
-        let sign = getRandomSign()
-        this.button = `${sign}`
-        if (sign == 'да') {this.correct = да}
-        else if (sign == 'нет') {this.correct = нет}
-        else if (sign == 'возможно') {this.correct = возможно}
-        else if (sign == 'маловероятно') {this.correct = маловероятно}
-        else if (sign == 'духи так не считают') {this.correct = духи так не считают}
-        else if (sign == 'духи соглсасны с этим') {this.correct = духи согласны с этим}
-    }}
+function answer1(){
+    let a = getRandomSign()
+    let b = 0
+    if (a == 0){b = 'да'}
+    else if (a == 1) {b = 'нет'}
+    else if (a == 2) {b = 'возможно'}
+    else if (a == 3) {b = 'маловероятно'}
+    else if (a == 4) {b = 'духи так не считают'}
+    else if (a == 5) {b = 'духи согласны с этим'}
+    alert(b)
+}
 
-var el = document.getElementById('img');
-document.getElementsByClassName('answer')[0].addEventListener('click',
-    function() {
-        el.classList.toggle('active');
-    })
-
-
+function answer(){
 anime({
-    targets: '.shape',
+    targets: '.img',
     keyframes: [
         {translateX: '0px'},
         {translateX: '-20px'},
@@ -37,13 +30,20 @@ anime({
         {translateX: '-20px'},
         {translateX: '0px'},
         {translateX: '20px'},
+        {translateX: '0px'},
+        {translateX: '-20px'},
+        {translateX: '0px'},
+        {translateX: '20px'},
+        {translateX: '0px'},
+        {translateX: '-20px'},
+        {translateX: '0px'},
+        {translateX: '20px'},
+        {translateX: '0px'}
     ],
-    duration: 2000,
+    duration: 1000,
     easing: 'linear'
 })
-
-function answer(){
-    //document.getElementById('inp1').value
-    alert();
+setTimeout(function() {
+    answer1()
+}, 1000)
 }
-
