@@ -16,7 +16,10 @@
 
     <div class="input"> 
         <p>
-            Введите вопрос <input type="text" id="imp1">
+            <form>
+                Введите вопрос <input type="text" id="imp1">
+                <button class='clear' type="reset">Очистить</button>
+            </form>
         </p>
     </div>
 
