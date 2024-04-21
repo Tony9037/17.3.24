@@ -17,6 +17,8 @@ function answer1(){
     else if (a == 5) {b = 'духи согласны с этим'}
     let zero = document.querySelector('.zero')
     zero.innerHTML = `${b}`
+    let inpt = document.querySelector('.text2')
+    inpt.innerHTML = ``
 }
 
 function answer(){
