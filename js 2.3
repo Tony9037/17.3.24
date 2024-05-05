@@ -1,0 +1,19 @@
+let square = document.querySelector('#square')
+let button = document.querySelector('button')
+
+function answer(){
+    anime({
+        targets: '#square',
+        keyframes: [
+            {borderRadius: 0},
+            {borderRadius: '50% 50%'},
+            {borderRadius: '40% 40%'},
+            {borderRadius: '0% 0%'}
+        ],
+        duration: 500,
+        easing: 'linear'
+    })
+    setTimeout(function() {
+        alert(2)
+    }, 1000)
+    }
