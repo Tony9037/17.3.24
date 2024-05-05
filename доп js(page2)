@@ -1,0 +1,45 @@
+let square = document.querySelector('#square')
+let button = document.querySelector('button')
+let circ1 = document.querySelector('.h1')
+let circ2 = document.querySelector('.h2')
+let circ3 = document.querySelector('.h3')
+let circ4 = document.querySelector('.h4')
+let circ5 = document.querySelector('.h5')
+let circ6 = document.querySelector('.h6')
+
+function getRandomSign(){
+    let a = randint(1,1)
+    return a
+}
+
+function answer1(){
+    let a = 1
+    if (a == 1){circ1.style.cssText = `
+    color:green;
+  `;}
+    else if (a == 2) {circ2.style.display = inline}
+    else if (a == 3) {circ3.style.display = inline}
+    else if (a == 4) {circ4.style.display = inline}
+    else if (a == 5) {circ5.style.display = inline}
+    else if (a == 6) {circ6.style.display = inline}
+}
+
+function answer(){
+    anime({
+        targets: '#square',
+        keyframes: [
+            {borderRadius: 0},
+            {borderRadius: '50% 50%'},
+            {borderRadius: '40% 40%'},
+            {borderRadius: '0% 0%'}
+        ],
+        duration: 500,
+        easing: 'linear'
+    })
+    setTimeout(function() {
+    circ1.style.cssText = `
+        color:green;
+      `;
+    }, 100)
+    }
+
