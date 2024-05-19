@@ -1,28 +1,37 @@
 let square = document.querySelector('#square')
 let button = document.querySelector('button')
-let circ1 = document.querySelector('.h1')
-let circ2 = document.querySelector('.h2')
-let circ3 = document.querySelector('.h3')
-let circ4 = document.querySelector('.h4')
-let circ5 = document.querySelector('.h5')
-let circ6 = document.querySelector('.h6')
+let circ2 = document.querySelector('.two')
+let circ3 = document.querySelector('.three')
+let circ4 = document.querySelector('.four')
+let circ5 = document.querySelector('.five')
+let circ6 = document.querySelector('.six')
+
+let a = getRandomSign()
 
 function getRandomSign(){
-    let a = randint(1,1)
+    let a = randint(1,6)
     return a
 }
 
 function answer1(){
-    let a = 1
-    if (a == 1){circ1.style.cssText = `
-    color:green;
-  `;}
-    else if (a == 2) {circ2.style.display = inline}
-    else if (a == 3) {circ3.style.display = inline}
-    else if (a == 4) {circ4.style.display = inline}
-    else if (a == 5) {circ5.style.display = inline}
-    else if (a == 6) {circ6.style.display = inline}
+    if (a == 1){square.style.display = 'contents'}
+    else if (a == 2) {circ2.style.display = 'contents'}
+    else if (a == 3) {circ3.style.display = 'contents'}
+    else if (a == 4) {circ4.style.display = 'contents'}
+    else if (a == 5) {circ5.style.display = 'contents'}
+    else if (a == 6) {circ6.style.display = 'contents'}
 }
+
+function answer2(){
+    answer1()
+    if (a == 1){square.style.display = 'contents'}
+    else if (a == 2) {circ2.style.display = 'contents'}
+    else if (a == 3) {circ3.style.display = 'contents'}
+    else if (a == 4) {circ4.style.display = 'contents'}
+    else if (a == 5) {circ5.style.display = 'contents'}
+    else if (a == 6) {circ6.style.display = 'contents'}
+}
+
 
 function answer(){
     anime({
@@ -37,9 +46,7 @@ function answer(){
         easing: 'linear'
     })
     setTimeout(function() {
-    circ1.style.cssText = `
-        color:green;
-      `;
-    }, 100)
+        answer1()
+    }, 1000)
     }
 
