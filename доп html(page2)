@@ -2,7 +2,7 @@
 <html>
 <head>
   <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
-  <script src='js 2.3.js'></script>
+  <script src='js2.3.js'></script>
    <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -17,17 +17,44 @@
   <h3 class="info"> Информация о работе</h3>
     </div>
     <div class="idk">
-      <div id="square"> 
-
+      <div class="square">
+      <div class="one"> 
+        <div id="circle"></div>
+      </div>
+      <div class="two">
+        <div class="circle21"></div>
+        <div class="circle22"></div>
+      </div>
+      <div class="three">
+        <div class="circle31"></div>
+        <div class="circle32"></div>
+        <div class="circle33"></div>
+      </div>
+      <div class="four">
+        <div class="circle41"></div>
+        <div class="circle42"></div>
+        <div class="circle43"></div>
+        <div class="circle44"></div>
+      </div>
+      <div class="five">
+        <div class="circle51"></div>
+        <div class="circle52"></div>
+        <div class="circle53"></div>
+        <div class="circle54"></div>
+        <div class="circle55"></div>
+      </div>
+      <div class="six">
+        <div class="circle61"></div>
+        <div class="circle62"></div>
+        <div class="circle63"></div>
+        <div class="circle64"></div>
+        <div class="circle65"></div>
+        <div class="circle66"></div>
+      </div>
+      </div>
       </div>
     <button type="button" onclick="answer()"> <p> Жми </p> </button>
     </div>
-    <h1 class="h1">1</h1>
-    <h2 class="h2">2</h2>
-    <h3 class="h3">3</h3>
-    <h4 class="h4">4</h4>
-    <h5 class="h5">5</h5>
-    <h6 class="h6">6</h6>
 
 </body>
 <lower>
